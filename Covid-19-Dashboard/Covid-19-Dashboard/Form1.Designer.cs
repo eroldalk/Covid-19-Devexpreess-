@@ -30,24 +30,32 @@
         {
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // simpleButton1
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(58, 140);
+            this.simpleButton1.Location = new System.Drawing.Point(72, 175);
+            this.simpleButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(188, 131);
+            this.simpleButton1.Size = new System.Drawing.Size(170, 129);
             this.simpleButton1.TabIndex = 0;
             this.simpleButton1.Text = "Viewer";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // simpleButton2
             // 
-            this.simpleButton2.Location = new System.Drawing.Point(379, 140);
+            this.simpleButton2.Location = new System.Drawing.Point(367, 175);
+            this.simpleButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(206, 131);
+            this.simpleButton2.Size = new System.Drawing.Size(164, 129);
             this.simpleButton2.TabIndex = 1;
             this.simpleButton2.Text = "Designer";
             this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // Form1
             // 
@@ -66,6 +74,7 @@
 
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
 

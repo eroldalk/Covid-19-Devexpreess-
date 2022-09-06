@@ -96,6 +96,12 @@
     <Compile Include="frmdesigner.Designer.cs">
       <DependentUpon>frmdesigner.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewer.Designer.cs">
+      <DependentUpon>frmViewer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -103,6 +109,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmdesigner.resx">
       <DependentUpon>frmdesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewer.resx">
+      <DependentUpon>frmViewer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

@@ -22,5 +22,15 @@ namespace Covid_19_Dashboard
             frmdesigner f = new frmdesigner();
             f.ShowDialog();
         }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            string fileName;
+            openFileDialog1.ShowDialog();
+            fileName = openFileDialog1.FileName;
+            frmViewer f = new frmViewer();
+            f.Show();
+            f.loadDashboard(fileName);
+        }
     }
 }
